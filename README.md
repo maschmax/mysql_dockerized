@@ -20,7 +20,14 @@ $ make stop
 $ make stop-data
 ```
 
-## How to connect (Mac OS X)
+## How to connect 
+
+### When client app is not containerized
 ```
-SENSITIVE_DATABASE_CONNECTIONS_MYSQL_HOST=host.docker.internal
+MYSQL_HOST='127.0.0.1'
+```
+
+### Mac OS X, if your client app is containerized
+```
+MYSQL_HOST=host.docker.internal
 ```
